@@ -1,21 +1,43 @@
 {
-    "goToPage-Main": {
-        "category": "wm.NavigationVariable",
-        "operation": "gotoPage",
-        "pageName": "Main",
-        "_id": "wm-wm.NavigationVariable1389180517517",
-        "name": "goToPage-Main"
-    },
-    "supportedLocale": {
-        "name": "supportedLocale",
-        "type": "string",
-        "isList": false,
-        "owner": "App",
-        "dataSet": {
-            "en": "English"
-        },
-        "saveInPhonegap": false,
-        "category": "wm.Variable",
-        "_id": "wm-wm.Variable1402640443182"
-    }
+	"goToPage-Main": {
+		"name": "goToPage-Main",
+		"owner": "Page",
+		"operation": "gotoPage",
+		"pageName": "Main",
+		"dataBinding": {},
+		"category": "wm.NavigationVariable",
+		"_id": "wm-wm.NavigationVariable1389180517517"
+	},
+	"supportedLocale": {
+		"name": "supportedLocale",
+		"type": "string",
+		"isList": false,
+		"owner": "App",
+		"dataSet": {
+			"en": "English"
+		},
+		"dataBinding": [
+			{
+				"name": "dataSet",
+				"type": "object",
+				"fields": [
+					{
+						"name": "dataValue",
+						"type": "string"
+					}
+				]
+			}
+		],
+		"saveInPhonegap": false,
+		"category": "wm.Variable",
+		"_id": "wm-wm.Variable1402640443182"
+	},
+	"goToPage-Page1": {
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "Page1",
+		"dataBinding": {},
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage-Page1-wm.NavigationVariable-1438760378100"
+	}
 }
